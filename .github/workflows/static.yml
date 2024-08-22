@@ -34,10 +34,10 @@ jobs:
       - uses: npm/action-setup@v4
         with:
           version: 9
-      - uses: actions/setup-node@v4
-        with:
+      - name: Use Node.js  
+        uses: actions/setup-node@v4  
+        with:  
           node-version: '18'
-          cache: 'npm'
       - run: npm -v
       - run: npm install
       - name: Build
