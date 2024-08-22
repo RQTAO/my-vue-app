@@ -16,6 +16,10 @@ export default defineConfig({
     // Components({
     //   resolvers: [ElementPlusResolver()],
     // }),
+    base:"./", //设置项目的根目录
+      build: {
+        outDir: 'docs' // 打包文件的输出目录
+    }
   ],
   //这个是resolve添加的别名
   resolve:{
